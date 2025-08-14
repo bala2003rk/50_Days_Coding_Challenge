@@ -1,0 +1,13 @@
+class Solution {
+    public String largestGoodInteger(String num) {
+        String s[]={"999","888","777","666","555","444","333","222","111","000"};
+        String res="";
+        for(String i : s){
+            if(num.contains(i)){
+                res+=i;
+                return res;
+            }
+        }
+        return res;
+    }
+}
